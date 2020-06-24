@@ -8,8 +8,12 @@
 
 #include <iostream>
 
+void Log(const char* mensagem) {
+    std::cout << mensagem << std::endl;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    Log("Hello, World!\n");
     return 0;
 }
