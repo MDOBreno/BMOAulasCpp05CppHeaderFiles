@@ -6,14 +6,19 @@
 //  Copyright © 2020 ProgramasBMO. All rights reserved.
 //
 
-#include <iostream>
 
-void Log(const char* mensagem) {
-    std::cout << mensagem << std::endl;
-}
+#include <iostream>     //Qnd incluimos algo entre <> siginifica "Busque dependencias na pasta iostream"
+//Obs: Quando referenciamos pasta tambem podemos usar "", mas arquivosso podem ser "" e não <>.
+
+#include "Log.hpp"
+//Obs: Caso o arquivo "Log.hpp" estivesse uma pasta acima desse arquivo(main.cpp),
+// entao o include teria que ser da seguinte maineira:
+//#include "../Log.hpp"
+
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    InitLog();
     Log("Hello, World!\n");
     return 0;
 }
