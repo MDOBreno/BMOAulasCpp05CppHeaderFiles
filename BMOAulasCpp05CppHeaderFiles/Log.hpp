@@ -13,7 +13,7 @@
 
 
 #include <stdio.h>  // Igual a: #include <cstdio>.
-//Obs: Sempre que houver .h é bliblioteca de C, e quando não houver é de Cpp
+//Obs: Sempre que houver .h é biblioteca de C, e quando não houver é de Cpp
 void Log(const char* mensagem);
 void InitLog();
 struct player{};
